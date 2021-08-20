@@ -52,7 +52,7 @@
             var name = getQueryVariable("name");
             //虽然通过实名认证，但所认证的人不是要求的人的情况,现仅限名字
             $.ajax({
-                url: "https://basketball.qiezizhibo.com/service-system/person/verify/result",
+                url: "https://basketball.qiezizhibo.com/service-basketball-system/person/verify/result",
                 dataType: "json",
                 data: {verifyToken: verifyToken, type: type},
                 success: function (res) {
